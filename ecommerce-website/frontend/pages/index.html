@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Header Component -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-6">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-blue-600">ShopEase</a>
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="text-gray-600 hover:text-blue-600">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-blue-600">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-blue-600 relative">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="md:flex items-center justify-between">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h1 class="text-4xl font-bold mb-4">Welcome to ShopEase</h1>
+          <p class="text-xl mb-6">Discover amazing products at unbeatable prices</p>
+          <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300 inline-block">Shop Now</a>
+        </div>
+        <div class="md:w-1/2">
+          <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image" class="rounded-lg shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold mb-8">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="featured-products">
+      <!-- Products will be loaded dynamically via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">ShopEase</h3>
+          <p>Your one-stop shop for all your needs.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#" class="hover:text-blue-400">Products</a></li>
+            <li><a href="#" class="hover:text-blue-400">About Us</a></li>
+            <li><a href="#" class="hover:text-blue-400">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p>&copy; 2023 ShopEase. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/app.js"></script>
+</body>
+</html>
